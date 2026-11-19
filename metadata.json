@@ -1,0 +1,8 @@
+{
+  "name": "Remix Remix: Remix: Sistema de Farmacia en Excel",
+  "description": "Sistema de gestión para control de inventario de medicamentos, registro de ventas y reportes automáticos con una interfaz interactiva estilo hoja de cálculo Excel, alertas de stock mínimo y vencimientos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+body {
+  background-color: #f1f5f9;
+  color: #1e293b;
+  font-family: var(--font-sans);
+}
+
+/* Custom micro animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.1s ease-out forwards;
+}
+
+/* Custom table scrollbar styles to match pristine excel formatting */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Professional Polish Badge Overrides */
+.status-badge {
+  padding: 2px 8px;
+  border-radius: 99px;
+  font-size: 11px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.status-ok {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.status-low {
+  background-color: #fef9c3;
+  color: #854d0e;
+}
+
+.status-crit {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
